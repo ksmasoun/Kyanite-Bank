@@ -1,0 +1,160 @@
+/*Background colour*/
+* {
+    -fx-background-color: rgb(227, 220, 220) ;
+    background-color: rgb(227, 220, 220) ;
+}
+
+/* Style for the overall SplitPane */
+.split-pane {
+    -fx-background-color: #000000;
+    background-color: #000000;
+}
+
+.split-pane > .split-pane-divider {
+    -fx-background-color: #000000;
+    background-color: #000000;
+    -fx-padding: 1px;
+    padding: 1px;
+}
+
+/* Style for the left VBox pane */
+#lblName{
+    -fx-text-fill: #333333;
+}
+
+#btnDepositMoney, #btnWithdrawMoney, #btnCheckBalance, #btnLogout, #btnDepostMoney, #btnWithdrawMoneyAnchor {
+    -fx-background-color: #3d93b2;
+    background-color: #3d93b2;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    font-size: 14px;
+    -fx-font-weight: bold;
+    font-weight: bold;
+    -fx-padding: 10px;
+    padding: 10px;
+    -fx-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#btnDepositMoney:hover, #btnCheckBalance:hover, #btnLogout:hover, #btnWithdrawMoney:hover  {
+    -fx-background-color: #3e8e41;
+    background-color: #3e8e41;
+}
+
+/* Style for the right AnchorPane panes */
+#lblNameHeader {
+    -fx-text-fill: #333333;
+}
+
+#lblAccountNum {
+    -fx-text-fill: #8c8c8c;
+}
+
+/* Style for the Register page */
+.hbox > label {
+    -fx-text-fill: #333333;
+}
+
+.grid-pane > label {
+    -fx-text-fill: #333333;
+}
+
+#btnCreateAccount, #btnBack{
+    -fx-background-color: #3d93b2;
+    background-color: #3d93b2;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    font-size: 14px;
+    -fx-font-weight: bold;
+    font-weight: bold;
+    -fx-padding: 10px;
+    padding: 10px;
+    -fx-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#btnCreateAccount:hover {
+    -fx-background-color: #3e8e41;
+    background-color: #3e8e41;
+}
+
+/* Global styles */
+* {
+    -fx-font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the login form */
+#txtUsername, #txtPassword, #txtEmail, #txtName, #txtAmtWithdraw {
+    -fx-background-color: #eee;
+    -fx-border-color: #000000;
+    -fx-border-radius: 5px;
+    -fx-padding: 2px;
+    background-color: #eee;
+    border-color: #000000;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#btnLogin, #btnRegister {
+    -fx-background-color: #3d93b2;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    background-color: #3d93b2;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#btnLogin:hover, #btnRegister:hover, #btnBack:hover, #btnDepostMoney:hover, #btnWithdrawMoneyAnchor:hover{
+    -fx-background-color: #B22222;
+    background-color: #B22222;
+}
+
+/* Styling for the deposit form */
+#txtPassword, #txtAmtDeposit {
+    -fx-background-color: #eee;
+    -fx-border-color: #000000;
+    -fx-border-radius: 5px;
+    -fx-padding: 2px;
+    background-color: #eee;
+    border-color: #000000;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#lblwelcomeLabel{
+    -fx-font-size: 18px;
+    font-size: 18px;
+}
+
+/* Styling for the labels */
+.label {
+    -fx-font-family: "Times New Roman";
+    font-family: "Times New Roman";
+    -fx-font-size: 16px;
+    font-size: 16px;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    font-weight: bold;
+}
+
+#lblAccBalance, #lblAccountNum{
+    -fx-font-family: "Times New Roman";
+    font-family: "Times New Roman";
+    -fx-font-size: 16px;
+    font-size: 16px;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    font-weight: bold;
+}
+
+#lblMenu{
+    -fx-font-size: 15px;
+    font-size: 15px;
+}
+
+

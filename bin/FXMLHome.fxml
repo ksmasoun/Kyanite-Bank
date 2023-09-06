@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.2794117647058823" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLHomeController">
+  <items>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="lblName" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="109.0" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="25.0" top="25.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="btnDepositMoney" mnemonicParsing="false" onAction="#DepositMoney" prefHeight="36.0" prefWidth="144.0" text="Deposit Money">
+               <VBox.margin>
+                  <Insets left="10.0" top="35.0" />
+               </VBox.margin></Button>
+            <Button fx:id="btnWithdrawMoney" mnemonicParsing="false" onAction="#WithdrawMoney" prefHeight="39.0" prefWidth="144.0" text="Withdraw Money">
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin></Button>
+            <Button fx:id="btnCheckBalance" mnemonicParsing="false" onAction="#CheckBalance" prefHeight="39.0" prefWidth="144.0" text="Check Balance">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#logout" text="Logout">
+               <VBox.margin>
+                  <Insets left="50.0" top="90.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+      <SplitPane dividerPositions="0.284136546184739" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label fx:id="lblNameHeader" layoutX="246.0" layoutY="33.0" prefHeight="27.0" prefWidth="134.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="43.0" layoutY="33.0" prefHeight="27.0" prefWidth="203.0" text="Welcome to Kyanite Bank ">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="43.0" layoutY="69.0" text="Session Id:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSessionId" layoutX="132.0" layoutY="65.0" prefHeight="27.0" prefWidth="166.0">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="ReplaceSceneHome" minHeight="0.0" minWidth="0.0" prefHeight="295.0" prefWidth="431.0">
+               <children>
+                  <Label fx:id="lblMenu" layoutX="14.0" layoutY="98.0" prefHeight="32.0" prefWidth="600.0" text="Please select button from left pane to perform an action!">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+  </items>
+</SplitPane>

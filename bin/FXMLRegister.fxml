@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.21636546184738958" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLRegisterController">
+  <items>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="132.0" layoutY="28.0" prefHeight="30.0" prefWidth="335.0" text="Register with Banking Managemt System!">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <GridPane fx:id="RegisterGridPane">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="66.60001220703126" minHeight="10.0" prefHeight="66.60001220703126" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="68.19998779296874" minHeight="10.0" prefHeight="60.19998779296873" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="26.0" prefWidth="56.0" text="Name" GridPane.halignment="RIGHT">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="75.0" top="25.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtPassword" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="-20.0" top="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label prefHeight="26.0" prefWidth="83.0" text="Username" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="40.0" right="50.0" top="-20.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="170.0" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="-20.0" top="25.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="txtEmail" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="36.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="40.0" left="-20.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label prefHeight="26.0" prefWidth="76.0" text="Password" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="20.0" right="55.0" top="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="61.0" text="E-mail" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="45.0" right="70.0" top="10.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtUsername" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="55.0" left="-20.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <Button fx:id="btnCreateAccount" mnemonicParsing="false" onAction="#createAccount" onKeyPressed="#createAccount" prefHeight="36.0" prefWidth="130.0" text="Create Account" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="60.0" left="-130.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btnBack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#BackToLogin" prefHeight="36.8" prefWidth="130.4" text="Back" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="60.0" left="20.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+  </items>
+</SplitPane>
