@@ -1,6 +1,6 @@
-## Getting Started
+## Name
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Kyanite Banking Management System
 
 ## Folder Structure
 
@@ -11,8 +11,7 @@ The workspace contains two folders by default, where:
 
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Description
 
-## Dependency Management
+•Java-based Banking Management System with JavaFX, Maven, JUnit, and File I/O with a secure login page with user credential retrieval and creation with OOP (Object Oriented Programming), OOD (Object Oriented Design), and MVC design, following DRY and SOLID principles for seamless bank account management.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
