@@ -1,6 +1,6 @@
-# Java Banking Management System
+# Kyanite Bank
 
-The Java Banking Management System is a comprehensive application developed using JavaFX, Maven, JUnit, and File I/O. It provides a secure and efficient solution for managing bank accounts and transactions.
+Kyanite Bank is a comprehensive application developed using JavaFX, Maven, JUnit, and File I/O. It provides a secure and efficient solution for managing bank accounts and transactions.
 
 ## Key Features
 
